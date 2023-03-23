@@ -7,5 +7,13 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+
+    <% messages.forEach((element, index) => { %>
+      <h2><%= element.user %></h2>
+      <p><%= element.text %></p>
+      <p><%= element.added %></p>
+    <% });%>
+
+    <a href="/new">Send Message</a>
   </body>
 </html>
